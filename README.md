@@ -16,19 +16,19 @@ PocoDBIO.h
 3，添加现有工程将TypGuid导入到工程，并作为你自己工程的引用依赖项设置（工程->属性->通用属性->框架和引用->添加新引用->选择TypGuid）
 4，使用IDatabaseIO.h中函数构造对象。示例代码如下
 
-IDataBaseModule * lpiDataBaseSql = NULL;
-if(CreatIDataBaseSql("./DatabaseDLL.dll",lpiDataBaseSql))//创建com
-{
-	lpiDataBaseSql->OnInit(L"LENOVO-PC",L"./stu.mdb",DATABASE_TYPE::ACCESS,L"",L"123";//初始化
-				… …
-	lpiDataBaseSql->GetTableCount("sa");//调用
-				CString s;
-				s.Format("SELECT * from sa");
-				_RecordsetPtr m_RecordSetPtr;
-				lpiDataBaseSql->MyQuarty(s,m_RecordSetPtr);//调用
-}
+		IDataBaseModule * lpiDataBaseSql = NULL;
+		if(CreatIDataBaseSql("./DatabaseDLL.dll",lpiDataBaseSql))//创建com
+		{
+lpiDataBaseSql->OnInit(L"LENOVO-PC",L"./stu.mdb",DATABASE_TYPE::ACCESS,L"",L"123";//初始化
+			… …
+lpiDataBaseSql->GetTableCount("sa");//调用
+			CString s;
+			s.Format("SELECT * from sa");
+			_RecordsetPtr m_RecordSetPtr;
+			lpiDataBaseSql->MyQuarty(s,m_RecordSetPtr);//调用
+		}
 		
-ReleaseIDataBaseSql(lpiDataBaseSql);//释放
+		ReleaseIDataBaseSql(lpiDataBaseSql);//释放
 5. 特别说明：debug 请使用DatabaseDLLD.dll 。release 请使用DatabaseDLL.dll
 
 6. PocoDBIO 类使用说明
