@@ -1,0 +1,11 @@
+CREATE USER xxj IDENTIFIED BY xxj 
+    
+GRANT DBA ,CONNECT TO xxj;
+
+
+1、安装oracle 
+2、以sysdba方式进入orcl数据库
+3、新建表空间，新建用户在sys上，并授予DBA和CONNECT 的权限
+4、语句实例（表空间未创建）
+	CREATE USER xxj IDENTIFIED BY xxj 
+	GRANT DBA ,CONNECT TO xxj;

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DatabaseTest", "DatabaseTest\DatabaseTest.vcproj", "{B351C38D-FDB9-4152-9B74-E91DBECB3653}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TypGuid", "TypGuid\TypGuid.vcproj", "{B47EB47C-1267-44BC-8EED-FDF6A13851C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B351C38D-FDB9-4152-9B74-E91DBECB3653}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B351C38D-FDB9-4152-9B74-E91DBECB3653}.Debug|Win32.Build.0 = Debug|Win32
+		{B351C38D-FDB9-4152-9B74-E91DBECB3653}.Release|Win32.ActiveCfg = Release|Win32
+		{B351C38D-FDB9-4152-9B74-E91DBECB3653}.Release|Win32.Build.0 = Release|Win32
+		{B47EB47C-1267-44BC-8EED-FDF6A13851C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B47EB47C-1267-44BC-8EED-FDF6A13851C3}.Debug|Win32.Build.0 = Debug|Win32
+		{B47EB47C-1267-44BC-8EED-FDF6A13851C3}.Release|Win32.ActiveCfg = Release|Win32
+		{B47EB47C-1267-44BC-8EED-FDF6A13851C3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

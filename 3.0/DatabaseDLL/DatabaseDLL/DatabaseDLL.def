@@ -1,0 +1,12 @@
+; DatabaseDLL.def : 声明 DLL 的模块参数。
+
+LIBRARY      "DatabaseDLL"
+
+
+EXPORTS
+	LightComCreate
+	;
+EXPORTS
+    DllRegisterServer PRIVATE
+	DllUnregisterServer PRIVATE
+    ; Explicit exports can go here
